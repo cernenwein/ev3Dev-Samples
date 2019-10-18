@@ -23,6 +23,15 @@ axle_track = 114
 robot = DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
 
 # This drives at 100 mm/sec straight
-robot.drive (100, 0)
+# drive(speed, steering) 
+#robot.drive (1, 0)
 # This drives straight backwards at 500 mm/sec for 2 seconds
-robot.drive_time(-500, 0, 2000) 
+#robot.drive_time(10, 0, 2000) 
+
+# Drive forward at 100 mm/s for two seconds
+robot.drive_time(100, 45, 2000)
+# Turn at 45 deg/s for three seconds
+#robot.drive_time(0, 45, 3000)
+
+
+brick.sound.beep()
