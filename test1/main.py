@@ -28,10 +28,12 @@ robot = DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
 # This drives straight backwards at 500 mm/sec for 2 seconds
 #robot.drive_time(10, 0, 2000) 
 
-# Drive forward at 100 mm/s for two seconds
-robot.drive_time(100, 45, 2000)
+# Drive forward at speed mm/s for time milliseconds
+speed = 500 
+time = 4 * 1000 
+
+robot.drive_time(speed, 0, time)
 # Turn at 45 deg/s for three seconds
 #robot.drive_time(0, 45, 3000)
-
 
 brick.sound.beep()
